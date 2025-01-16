@@ -1,5 +1,7 @@
 import "./App.css";
+import logo from "./assets/logo.png";
 import { Route, Switch } from "wouter";
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 import Landing from "./pages/Landing";
 import About from "./pages/About";
@@ -23,6 +25,7 @@ function App() {
         <Route><div className="flex items-center justify-center h-dvh bg-[#407CE0] text-white font-bold"> 404: No such page!</div></Route>
       </Switch>
       <Footer />
+      <FloatingWhatsApp phoneNumber="+94713458438" accountName="Muthukuda Constructions Agent" avatar={logo} statusMessage="Online"/>
     </>
   );
 }
