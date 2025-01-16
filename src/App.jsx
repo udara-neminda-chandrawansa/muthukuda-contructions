@@ -1,6 +1,9 @@
 import "./App.css";
 import { Route, Switch } from "wouter";
+
 import Landing from "./pages/Landing";
+import About from "./pages/About";
+
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
@@ -9,7 +12,8 @@ function App() {
     <>
       <Nav inLanding={true}/>
       <Switch>
-        <Route path="/" component={Landing} />
+      <Route path="/" component={Landing} />
+      <Route path="/aboutus" component={About} />
 
         <Route path="/users/:name">
           {(params) => <>Hello, {params.name}!</>}

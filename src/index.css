@@ -11,12 +11,17 @@
   font-family: 'Amstelvar';
   src: url('/src/assets/Fonts/Amstelvar.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Futura';
+  src: url('/src/assets/Fonts/futura-light-bt.ttf') format('truetype');
+}
 .nunito {
   font-family: "Amstelvar", serif;
 }
 
 *{
-    font-family: "Poppins", Inter, system-ui, Avenir, Helvetica, Arial,
+    font-family: "Futura", Inter, system-ui, Avenir, Helvetica, Arial,
     sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -24,7 +29,7 @@
 }
 
 .title {
-  font-family: "Amstelvar", Inter, system-ui, Avenir, Helvetica, Arial,
+  font-family: "Futura", Inter, system-ui, Avenir, Helvetica, Arial,
     sans-serif;
   font-style: normal;
   font-weight: 300;

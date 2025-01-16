@@ -103,7 +103,7 @@ function Landing() {
         {/*content*/}
         <div className="z-10 flex flex-col items-start justify-center w-2/3 gap-6 p-12 text-white max-sm:w-full max-md:p-6">
           <h1 className="text-3xl max-sm:text-xl">Your Dream Home</h1>
-          <h1 className="text-6xl poltawski motion-preset-slide-right max-sm:text-4xl">
+          <h1 className="text-6xl motion-preset-slide-right max-sm:text-4xl">
             A Place Where Dreams Become Reality
           </h1>
 

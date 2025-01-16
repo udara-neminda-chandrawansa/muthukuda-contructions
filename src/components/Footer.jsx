@@ -23,7 +23,7 @@ function Footer() {
 
               <a
                 href="tel:+94713458438"
-                className="block text-xl font-medium text-gray-900 hover:opacity-75"
+                className="block text-xl font-medium text-gray-900 max-sm:text-lg hover:opacity-75 max-[425px]:text-base"
               >
                 +94 713 458 438
               </a>
@@ -36,7 +36,7 @@ function Footer() {
 
               <a
                 href="mailto:info@muthukudaconstruction.lk"
-                className="block text-xl font-medium text-gray-900 hover:opacity-75"
+                className="block text-xl font-medium text-gray-900 hover:opacity-75 max-sm:text-lg max-[425px]:text-base"
               >
                 info@muthukudaconstruction.lk
               </a>
