@@ -258,7 +258,7 @@ function Landing() {
         <section className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2">
           <div className="flex items-center justify-center p-8 md:p-12 lg:px-16 lg:py-24">
             <div className="max-w-xl mx-auto text-center">
-              <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
+              <h2 className="text-2xl font-bold text-gray-900 md:text-3xl title">
                 Build Your Dream Home With Us
               </h2>
 
