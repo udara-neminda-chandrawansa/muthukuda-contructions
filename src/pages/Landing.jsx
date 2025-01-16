@@ -95,7 +95,7 @@ function Landing() {
     <div>
       {/*banner*/}
       <div
-        className="relative flex bg-center bg-cover h-dvh"
+        className="relative flex bg-fixed bg-center bg-cover h-dvh"
         style={{ backgroundImage: `url(${banner})` }}
       >
         {/*Top layer (backdrop)*/}
