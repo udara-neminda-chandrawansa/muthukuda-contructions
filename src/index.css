@@ -6,6 +6,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Amstelvar';
+  src: url('/src/assets/Fonts/Amstelvar.ttf') format('truetype');
+}
+.nunito {
+  font-family: "Amstelvar", serif;
+}
+
 *{
     font-family: "Poppins", Inter, system-ui, Avenir, Helvetica, Arial,
     sans-serif;
@@ -15,7 +24,7 @@
 }
 
 .title {
-  font-family: "Optima nova LT Pro", Inter, system-ui, Avenir, Helvetica, Arial,
+  font-family: "Amstelvar", Inter, system-ui, Avenir, Helvetica, Arial,
     sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -23,12 +32,12 @@
 }
 
 .optima {
-  font-family: "Optima nova LT Pro", Inter, system-ui, Avenir, Helvetica, Arial,
+  font-family: "Amstelvar", Inter, system-ui, Avenir, Helvetica, Arial,
     sans-serif;
 }
 
 .poltawski {
-  font-family: "Poltawski Nowy", Inter, system-ui, Avenir, Helvetica, Arial,
+  font-family: "Amstelvar", Inter, system-ui, Avenir, Helvetica, Arial,
     sans-serif;
 }
 

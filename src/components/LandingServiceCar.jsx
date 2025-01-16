@@ -9,41 +9,29 @@ const LSCarousel = () => {
           <ul className="flex items-center h-full px-6 text-center text-black max-sm:px-3 justify-evenly max-sm:flex-col">
             <li className="max-sm:flex max-sm:gap-1">
               <Link href="/services/floor-area-counting">
-                <p className="uppercase max-sm:hidden">Floor area </p>
-                <p className="uppercase max-sm:hidden">counting</p>
-                <p className="hidden uppercase max-sm:block">
-                  Floor area counting
-                </p>
+                <p className="uppercase max-sm:hidden">Residential</p>
+                <p className="uppercase max-sm:hidden">Construction</p>
               </Link>
             </li>
             <li className="h-1/2 bg-[#aaa] w-[1px] max-sm:h-[1px] max-sm:w-full"></li>
             <li className="max-sm:flex max-sm:gap-1">
               <Link href="/services/special-loans">
-                <p className="uppercase max-sm:hidden">Provides special</p>
-                <p className="uppercase max-sm:hidden">loan facilities</p>
-                <p className="hidden uppercase max-sm:block">
-                  Provides special loan facilities
-                </p>
+                <p className="uppercase max-sm:hidden">Commercial</p>
+                <p className="uppercase max-sm:hidden">Construction</p>
               </Link>
             </li>
             <li className="h-1/2 bg-[#aaa] w-[1px] max-sm:h-[1px] max-sm:w-full"></li>
             <li className="max-sm:flex max-sm:gap-1">
               <Link href="/services/planning-approvals">
-                <p className="uppercase max-sm:hidden">Planning </p>
-                <p className="uppercase max-sm:hidden">approvals</p>
-                <p className="hidden uppercase max-sm:block">
-                  Planning approvals
-                </p>
+                <p className="uppercase max-sm:hidden">Renovations </p>
+                <p className="uppercase max-sm:hidden">and Remodeling</p>
               </Link>
             </li>
             <li className="h-1/2 bg-[#aaa] w-[1px] max-sm:h-[1px] max-sm:w-full"></li>
             <li className="max-sm:flex max-sm:gap-1">
               <Link href="/services/landscaping">
-                <p className="uppercase max-sm:hidden">Landscaping with </p>
-                <p className="uppercase max-sm:hidden">new and old designs</p>
-                <p className="hidden uppercase max-sm:block">
-                  Landscaping with new and old designs
-                </p>
+                <p className="uppercase max-sm:hidden">Sustainable </p>
+                <p className="uppercase max-sm:hidden">Construction</p>
               </Link>
             </li>
           </ul>

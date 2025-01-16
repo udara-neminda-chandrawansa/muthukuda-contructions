@@ -49,138 +49,93 @@ function Landing() {
         style={{ backgroundImage: `url(${banner})` }}
       >
         {/*Top layer (backdrop)*/}
-        <div className="absolute bottom-0 h-full inset-0 bg-gradient-to-br from-[#000000D4] to-[#000000D4]"></div>
+        <div className="absolute inset-0 bottom-0 h-full bg-black opacity-60"></div>
         {/*content*/}
         <div className="z-10 flex flex-col items-start justify-center w-2/3 gap-6 p-12 text-white max-sm:w-full max-md:p-6">
-          <h1 className="text-3xl max-sm:text-2xl">Build Your Dream With Us</h1>
-          <p className="text-justify max-sm:text-sm">
-            Whatever good things we build end up building us
-          </p>
-          <p className="text-justify max-sm:text-sm">
-            At NCI Homes, we transform your dreams into reality. From concept to
-            completion, our expert team delivers high-quality construction
-            solutions tailored to your vision. Build your future with
-            confidence—build with NCI Homes."
-          </p>
           <h1 className="text-6xl poltawski motion-preset-slide-right max-sm:text-4xl">
-            NCI HOMES
+            Muthukuda Constructions
           </h1>
+          <h1 className="text-3xl max-sm:text-2xl">Your Dream Home</h1>
+          <p className="text-justify max-sm:text-sm">
+            At Muthukuda Constructions, we transform your dreams into reality.
+            From concept to completion, our expert team delivers high-quality
+            construction solutions tailored to your vision. Build your future
+            with confidence—build with Muthukuda Constructions.
+          </p>
         </div>
         {/*banner bottom*/}
-        <div className="absolute bottom-0 z-10 w-full px-6 text-sm max-md:text-xs">
+        <div className="absolute bottom-0 z-10 w-full px-6 text-sm max-md:text-xs max-sm:hidden">
           {/*service carousel*/}
-          <div className="w-full h-[15dvh] max-sm:h-fit bg-[#407CE0]">
+          <div className="w-full h-[15dvh] max-sm:hidden bg-[#407CE0]">
             <LSCarousel></LSCarousel>
           </div>
           {/*spacing*/}
           <div className="w-full h-[5dvh]"></div>
         </div>
       </div>
-      {/*contact details (hidden)*/}
-      <div className="relative h-[10dvh] hidden justify-center bg-[#F1F1F1] max-md:p-6 max-md:h-fit max-sm:p-3">
-        <div className="md:h-[20dvh] z-20 flex w-full text-sm bg-white rounded-lg md:-translate-y-1/2 md:w-5/6 md:absolute max-md:flex-col">
-          <div className="flex flex-col items-center justify-center w-1/3 gap-3 max-md:w-full max-md:py-3">
-            <img src={call} alt="call" />
-            <p>+94 812 213 613</p>
-            <p>+94 777 860 950</p>
+      {/*welcome*/}
+      <div>
+        <section className="relative bg-[url(https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)] bg-cover bg-center bg-no-repeat">
+          <div className="absolute inset-0 bg-black/50 sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
+
+          <div className="relative max-w-screen-xl px-4 py-32 mx-auto sm:px-6 lg:flex lg:fit lg:items-center lg:px-8">
+            <div className="max-w-xl text-center">
+              <h1 className="text-3xl font-extrabold text-left text-white sm:text-5xl">
+                Welcome To
+                <strong className="block font-extrabold text-left text-[#407CE0] ">
+                  Muthukuda Construction
+                </strong>
+              </h1>
+
+              <p className="max-w-lg mt-4 text-justify text-white">
+                MUTHUKUDA ENGINEERING & CONSTRUCTION (PVT) LTD is a leading and
+                fast growing construction company in Sri Lanka. We are engaged
+                in both commercial and residential construction with a mission
+                of”Brining your dreamed living space in to the real“. Our
+                Services includes Construction, Project Management,
+                Architectural Designing, Interior Designing, Structural
+                Designing, BOQ, Estimation and council approvals
+              </p>
+            </div>
           </div>
-          <div className="flex flex-col items-center justify-center w-1/3 gap-3 max-md:w-full max-md:py-3">
-            <img src={email} alt="call" />
-            <p>ifor@ncihomes.com</p>
-          </div>
-          <div className="flex flex-col items-center justify-center w-1/3 gap-3 max-md:w-full max-md:py-3">
-            <img src={location} alt="call" />
-            <p>NCI BUILDING</p>
-            <p className="text-center">No. 381 A, Katugastota Road, Kandy</p>
-          </div>
-        </div>
+        </section>
       </div>
-      {/*who we are*/}
-      <div className="bg-[#F1F1F1] px-12 py-6 max-md:px-6 max-sm:p-3 flex flex-col items-center gap-3">
-        <h1 className="text-5xl font-semibold text-center poltawski max-md:text-3xl">
-          Who We Are
-        </h1>
-        <p className="text-justify sm:text-center max-sm:text-sm">
-          NCI Homes Private Limited is a well-established Civil Engineering and
-          Constructio company located in Kandy-Sri Lanka. In last two decades we
-          have earned its reputation as a creative and innovative construction
-          institution that offers high quality construction services in Sri
-          Lanka
-        </p>
-        <h1 className="text-2xl text-[#407CE0] font-semibold text-center poltawski">
-          Our Services
-        </h1>
-        <p className="text-justify sm:text-center max-sm:text-sm">
-          We treat our customers with the best we have. Therefore we provide
-          them a quality customer service which would saticfy their
-          expectations. We offers many facilities as follows:
-        </p>
-        {/*service card grid*/}
-        <div className="grid grid-cols-4 gap-6 w-fit max-sm:w-full place-items-center max-lg:grid-cols-2 max-sm:grid-cols-1">
-          <ServiceCard
-            text={"Floor area counting"}
-            url={"floor-area-counting"}
-            img={card_1}
-          ></ServiceCard>
+      {/*CTA*/}
+      <div>
+        <section className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2">
+          <div className="p-8 md:p-12 lg:px-16 lg:py-24">
+            <div className="max-w-xl mx-auto text-center">
+              <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
+              Build Your Dream Home With Us
+              </h2>
 
-          <ServiceCard
-            text={"Provides special loan facilities"}
-            url={"special-loans"}
-            img={card_2}
-          ></ServiceCard>
+              <p className="hidden text-gray-500 md:mt-4 md:block">
+              WE ENSURE TO GIVE THE BEST QUALITY SERVICE FOR YOUR EXPENDITURE
+              </p>
 
-          <ServiceCard
-            text={"Planning approvals"}
-            url={"planning-approvals"}
-            img={card_3}
-          ></ServiceCard>
+              <div className="flex justify-center gap-6 mt-4 md:mt-8">
+              <Link
+                  href="#"
+                  className="inline-block px-12 py-3 text-sm font-medium text-white transition rounded bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400"
+                >
+                  Our Projects
+                </Link>
+                <Link
+                  href="#"
+                  className="inline-block px-12 py-3 text-sm font-medium text-white transition rounded bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400"
+                >
+                  Get a Quote
+                </Link>
+              </div>
+            </div>
+          </div>
 
-          <ServiceCard
-            text={"Landscaping with new and old designs"}
-            url={"landscaping"}
-            img={card_4}
-          ></ServiceCard>
-        </div>
-        <div className="flex justify-center items-center h-[5dvh] w-full">
-          <Link href="/services">
-            <p className="underline underline-offset-4">View All</p>
-          </Link>
-        </div>
-      </div>
-      {/*why choose us*/}
-      <div className="flex gap-6 px-12 py-6 max-md:px-6 max-sm:p-3 max-md:flex-col">
-        <div className="md:w-1/3">
           <img
-            src={choose_us_img}
-            alt="choose_us_img"
-            className="object-cover w-full h-full rounded-lg max-md:max-h-[300px] max-md:object-contain max-md:object-top"
+            alt=""
+            src="https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+            className="object-cover w-full h-56 sm:h-full"
           />
-        </div>
-        <div className="flex flex-col gap-6 md:w-2/3">
-          <h1 className="text-5xl font-semibold md:text-start poltawski max-md:text-3xl max-md:text-center">
-            Why Choose Us
-          </h1>
-          <h3 className="text-xl font-medium">Competitive rates</h3>
-          <p className="text-justify max-sm:text-sm">
-            We offer you the most competitive rates of the current market. Brand
-            new houses are available from 3.5 million onwards.
-          </p>
-          <h3 className="text-xl font-medium">
-            High quality construction services and standards
-          </h3>
-          <p className="text-justify max-sm:text-sm">
-            We use quality materials and manpower. Unique, innovative
-            architectural designs. Quality customer service.
-          </p>
-          <h3 className="text-xl font-medium">
-            Loan Facilities & Insurance facilities
-          </h3>
-          <p className="text-justify max-sm:text-sm">
-            We would help our customers to obtain a housing loan from a
-            recognized finance institution. Free insurance facilities from
-            recognized insurance company.
-          </p>
-        </div>
+        </section>
       </div>
       {/*contact us*/}
       <div className="flex flex-col items-center gap-6 px-12 py-6 max-md:px-6 max-sm:p-3">
@@ -205,12 +160,12 @@ function Landing() {
           Our Latest Completed Projects
         </h1>
         <p className="max-sm:text-justify sm:text-center">
-          At NCI Homes, we take pride in turning dreams into reality. Explore
-          our portfolio of recently completed projects that showcase our
-          dedication to quality, innovation, and excellence in construction.
-          From modern homes to commercial spaces, each project reflects our
-          commitment to delivering exceptional craftsmanship and tailored
-          solutions to meet our clients' unique needs.
+          At Muthukuda Constructions, we take pride in turning dreams into
+          reality. Explore our portfolio of recently completed projects that
+          showcase our dedication to quality, innovation, and excellence in
+          construction. From modern homes to commercial spaces, each project
+          reflects our commitment to delivering exceptional craftsmanship and
+          tailored solutions to meet our clients' unique needs.
         </p>
         {/*service card grid*/}
         <div className="grid grid-cols-4 gap-6 w-fit max-sm:w-full place-items-center max-lg:grid-cols-2 max-sm:grid-cols-1">
@@ -286,23 +241,23 @@ function Landing() {
           Our Partners
         </h1>
         <p className="text-justify sm:text-center max-sm:text-sm">
-          At NCI Homes, we believe in the power of collaboration. We are proud
-          to work alongside trusted partners who share our vision for quality
-          and excellence. Together, we bring innovative solutions, premium
-          materials, and expert services to every project, ensuring lasting
-          success and satisfaction for our clients.
+          At Muthukuda Constructions, we believe in the power of collaboration.
+          We are proud to work alongside trusted partners who share our vision
+          for quality and excellence. Together, we bring innovative solutions,
+          premium materials, and expert services to every project, ensuring
+          lasting success and satisfaction for our clients.
         </p>
         <div className="grid grid-cols-5 gap-6 w-fit max-sm:w-full place-items-center max-lg:grid-cols-3 max-sm:grid-cols-2">
-        <img src={partner_1} alt="partner-img" />
-        <img src={partner_2} alt="partner-img" />
-        <img src={partner_3} alt="partner-img" />
-        <img src={partner_4} alt="partner-img" />
-        <img src={partner_5} alt="partner-img" />
-        <img src={partner_6} alt="partner-img" />
-        <img src={partner_7} alt="partner-img" />
-        <img src={partner_8} alt="partner-img" />
-        <img src={partner_9} alt="partner-img" />
-        <img src={partner_10} alt="partner-img" />
+          <img src={partner_1} alt="partner-img" />
+          <img src={partner_2} alt="partner-img" />
+          <img src={partner_3} alt="partner-img" />
+          <img src={partner_4} alt="partner-img" />
+          <img src={partner_5} alt="partner-img" />
+          <img src={partner_6} alt="partner-img" />
+          <img src={partner_7} alt="partner-img" />
+          <img src={partner_8} alt="partner-img" />
+          <img src={partner_9} alt="partner-img" />
+          <img src={partner_10} alt="partner-img" />
         </div>
       </div>
       {/*our ongoing projects*/}
@@ -311,9 +266,9 @@ function Landing() {
           Our Ongoing Projects
         </h1>
         <p className="max-sm:text-justify sm:text-center">
-          At NCI Homes, progress is always in motion. Discover our ongoing
-          projects that showcase our commitment to innovation, quality, and
-          meticulous attention to detail. From residential developments to
+          At Muthukuda Constructions, progress is always in motion. Discover our
+          ongoing projects that showcase our commitment to innovation, quality,
+          and meticulous attention to detail. From residential developments to
           commercial ventures, these projects reflect our dedication to building
           spaces that inspire and endure.
         </p>
