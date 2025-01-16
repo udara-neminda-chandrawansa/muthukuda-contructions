@@ -1,8 +1,6 @@
 import logo from "./../assets/logo.png";
 import burger from "./../assets/burger.svg";
 
-import NavButton from "./NavButton";
-
 import { Link } from "wouter";
 
 function Nav({ inLanding }) {
