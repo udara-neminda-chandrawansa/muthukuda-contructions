@@ -5,17 +5,16 @@ import cta from "../assets/Landing/cta.jpg";
 import LSCarousel from "../components/LandingServiceCar";
 import { Link } from "wouter";
 
-import dp_1 from "../assets/Landing/dp/shanika.jpg";
-import dp_2 from "../assets/Landing/dp/rasika.jpg";
-import dp_3 from "../assets/Landing/dp/nawarathna.jpg";
-import dp_4 from "../assets/Landing/dp/virasha.jpg";
-import dp_5 from "../assets/Landing/dp/adisha.jpg";
-import dp_6 from "../assets/Landing/dp/aruna.jpg";
-
 import card_1 from "./../assets/Services/card_1.png";
 import card_2 from "./../assets/Services/card_2.png";
 import card_3 from "./../assets/Services/card_3.png";
 import card_4 from "./../assets/Services/card_4.png";
+
+import car_1 from "../assets/Landing/car/car_1.jpg";
+import car_2 from "../assets/Landing/car/car_2.jpg";
+import car_3 from "../assets/Landing/car/car_3.jpg";
+
+import TestimonialSlider from "../components/Testimonials";
 
 function Landing() {
   const blogs = [
@@ -50,44 +49,6 @@ function Landing() {
       title: "Sustainable Construction",
       content:
         "As a responsible construction company, we have a strong focus on sustainable construction practices. We incorporate environmentally friendly solutions into our projects, such as energy-efficient systems, sustainable materials, and waste reduction strategies. Our team is well-versed in green building certifications and can guide clients in achieving their sustainability goals while maintaining a high standard of quality.",
-    },
-  ];
-  const testimonials = [
-    {
-      image: dp_1, // Replace with the actual path or URL of the image
-      name: "Shanika Kottahachchi",
-      rating: 5,
-      content: "Excellent, reliable team. Can be recommended at any level.",
-    },
-    {
-      image: dp_2,
-      name: "Rasika Kodithuwakku",
-      rating: 5,
-      content: "It was a very good, I must say the best decision I have made to hand over the construction of my new house to Mr. Asanka and his team. It was the first impression he made when we discussed about the construction which made me to hand over the job to them. And I am glad that I made that decision.He and his whole team very much professional in their jobs. And mostly very much reliable.I had no trouble during the construction and their ability to get the job going was excellent. This was experienced during the hard time which we had with no building materials in the country. They were able to get the work going.I make this opportunity to express my gratitude to the muthukuda team for their excellent work.I can recommend this team to anyone, without any hesitation.",
-    },
-    {
-      image: dp_3,
-      name: "Nawarathna Bandara",
-      rating: 5,
-      content: "For my house construction, based on chartered Architecture Chatura Wanninayake recommendations i selected Mutukuda construction limited. There service is utmost higher in terms of quality, professionalism, commitment and time. Reliable and responsible service provider with many flexibility. Not only construction on site but also they handle all statutory requirement with all government institute professional manner with my minimum involvement. I specially thanks to Mutukada construction and ownership delivering my expectations highest level without any deviations.",
-    },
-    {
-      image: dp_4,
-      name: "Virasha Kavindi",
-      rating: 5,
-      content: "The director himself is very friendly and collaborative. When I first got into them  I had no idea how to build a home. They provide such a good consultancy .The performance by them has been outstanding in every regard.I really appreciate his professionalism, his sensitivity to my needs, and his desire to achieve completed projects on time and within budget in such a critical time in this country.What they have done with me is very impressive. They always try to maintain quality in such a good manner.You must call him and see yourself how helpful are them.They have completed my home in time even in these crucial times.",
-    },
-    {
-      image: dp_5,
-      name: "Adisha De Alwis",
-      rating: 5,
-      content: "Highly recommended! The owner also professional qualified person",
-    },
-    {
-      image: dp_6,
-      name: "Aruna Ratnavibusshana",
-      rating: 5,
-      content: "A company which is truly professional and is dedicated in maintaining a very high standard in all aspects of construction. The quality of their finished product is of such high standard, that it cannot be equaled by any other.My home was built by this star class company, I  am lost for words when trying to explain how overwhelmingly satisfied and delighted that i opted to give this very important project over to this company.Mr.Asanka Muthukuda, his managers and the entire team, are a dedicated and motivated group of professionals, who strive too, and succeed in delivering the best and the highest quality product to all their customers.I thank you sincerely sir, and wish Mr. Muthukuda and his company all the very best in all their future endeavors.WELL DONE!! Muthukuda Engineering & Constructions Pvt (Ltd), Will Recommend you always.!!",
     },
   ];
 
@@ -253,6 +214,107 @@ function Landing() {
         </div>
       </div>
 
+      {/*carousel*/}
+      <div
+        id="carouselExampleIndicators"
+        className="carousel slide"
+        data-coreui-ride="true"
+      >
+        <div className="carousel-indicators">
+          <button
+            type="button"
+            data-coreui-target="#carouselExampleIndicators"
+            data-coreui-slide-to="0"
+            className="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-coreui-target="#carouselExampleIndicators"
+            data-coreui-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-coreui-target="#carouselExampleIndicators"
+            data-coreui-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img
+              src={car_1}
+              className="d-block w-100 h-[50dvh] lg:h-[80dvh] object-cover"
+              alt="..."
+            />
+
+            <div className="carousel-caption d-none d-md-block">
+              <h5 className="text-xl">Transform Your Living Space</h5>
+              <p>
+                Innovative interior designs tailored to reflect your style and
+                personality.
+              </p>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <img
+              src={car_2}
+              className="d-block w-100 h-[50dvh] lg:h-[80dvh] object-cover"
+              alt="..."
+            />
+
+            <div className="carousel-caption d-none d-md-block">
+              <h5 className="text-xl">Elegance Meets Functionality</h5>
+              <p>
+                Creating timeless interiors that inspire and elevate everyday
+                living.
+              </p>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <img
+              src={car_3}
+              className="d-block w-100 h-[50dvh] lg:h-[80dvh] object-cover"
+              alt="..."
+            />
+
+            <div className="carousel-caption d-none d-md-block">
+              <h5 className="text-xl">Design Your Dream Home</h5>
+              <p>
+                Expert craftsmanship and creative solutions for every corner of
+                your home.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-coreui-target="#carouselExampleIndicators"
+          data-coreui-slide="prev"
+        >
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-coreui-target="#carouselExampleIndicators"
+          data-coreui-slide="next"
+        >
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div>
+
       {/*CTA*/}
       <div>
         <section className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2">
@@ -331,50 +393,8 @@ function Landing() {
         </div>
       </div>
       {/*testimonials*/}
-      <section className="bg-white">
-        <div className="max-w-screen-xl p-12 pt-0 mx-auto max-md:p-6 max-md:pt-0">
-          <h2 className="text-4xl font-bold tracking-tight text-center text-gray-900 sm:text-5xl title">
-            Read trusted reviews from our customers
-          </h2>
-
-          <div className="mt-8 [column-fill:_balance] sm:columns-2 sm:gap-6 lg:columns-3 lg:gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="mb-8 sm:break-inside-avoid">
-                <blockquote className="p-6 rounded-lg shadow-sm bg-gray-50 sm:p-8">
-                  <div className="flex items-center gap-4">
-                    <img
-                      alt={testimonial.name}
-                      src={testimonial.image}
-                      className="object-cover rounded-full size-14"
-                    />
-                    <div>
-                      <div className="flex justify-center gap-0.5 text-yellow-500">
-                        {Array.from({ length: testimonial.rating }).map(
-                          (_, starIndex) => (
-                            <svg
-                              key={starIndex}
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="size-5"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                            >
-                              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                            </svg>
-                          )
-                        )}
-                      </div>
-                      <p className="mt-0.5 text-lg font-medium text-gray-900 title">
-                        {testimonial.name}
-                      </p>
-                    </div>
-                  </div>
-                  <p className="mt-4 text-gray-700">{testimonial.content}</p>
-                </blockquote>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/*new*/}
+      <TestimonialSlider />
     </div>
   );
 }
