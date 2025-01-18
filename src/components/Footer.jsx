@@ -26,13 +26,13 @@ function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://www.instagram.com/mediaasia_lk/"
+                href="https://www.instagram.com/explore/locations/1079233842270985/muthukuda-engineering-construction-pvt-ltd/"
                 className="p-2 border border-gray-700 rounded-full hover:border-[#060097] transition-colors"
               >
                 <Instagram className="w-4 h-4" />
               </a>
               <a
-                href="https://www.facebook.com/mediaasia.lk/"
+                href="https://www.facebook.com/ASKMuthukudaarachchi"
                 className="p-2 border border-gray-700 rounded-full hover:border-[#060097] transition-colors"
               >
                 <Facebook className="w-4 h-4" />
