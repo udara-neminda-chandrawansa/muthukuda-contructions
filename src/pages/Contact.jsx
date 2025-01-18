@@ -97,7 +97,7 @@ const ContactForm = () => {
 
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-[#060097] to-[#060097]">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-[#060097] to-[#060097] max-[375px]:hidden">
                   <Phone className="w-5 h-5 text-white" />
                 </div>
                 <div>
@@ -111,7 +111,7 @@ const ContactForm = () => {
               </div>
 
               <div className="flex items-center gap-3">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-[#060097] to-[#060097]">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-[#060097] to-[#060097] max-[375px]:hidden">
                   <Mail className="w-5 h-5 text-white" />
                 </div>
                 <div>
@@ -142,6 +142,8 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
+      {/*map*/}
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1013137.0176339599!2d80.607512!3d7.290064!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3679f4e29236d%3A0x2b63e58fb75aa14f!2sMuthukuda%20Engineering%20and%20Construction%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1737178813004!5m2!1sen!2slk" className="w-full h-[40dvh] p-6 pt-0" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
     </div>
   );
 };
