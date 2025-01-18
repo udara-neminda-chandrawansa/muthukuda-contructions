@@ -7,6 +7,7 @@ import Landing from "./pages/Landing";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import ContactForm from "./pages/Contact";
+import Projects from "./pages/Projects";
 
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
@@ -20,6 +21,7 @@ function App() {
       <Route path="/aboutus" component={About} />
       <Route path="/services" component={Services} />
       <Route path="/contact" component={ContactForm} />
+      <Route path="/projects" component={Projects} />
 
         <Route path="/users/:name">
           {(params) => <>Hello, {params.name}!</>}
