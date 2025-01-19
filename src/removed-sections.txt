@@ -436,3 +436,38 @@
           <span className="visually-hidden">Next</span>
         </button>
       </div>
+
+      
+      {/*CTA*/}
+      <div>
+        <section className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2">
+          <div className="flex items-center justify-center p-8 md:p-12 lg:px-16 lg:py-24">
+            <div className="max-w-xl mx-auto text-center">
+              <h2 className="text-2xl font-bold text-gray-900 md:text-3xl title">
+                Build Your Dream Home With Us
+              </h2>
+
+              <p className="hidden text-gray-500 md:mt-4 md:block">
+                WE ENSURE TO GIVE THE BEST QUALITY SERVICE FOR YOUR EXPENDITURE
+              </p>
+
+              <div className="flex justify-center gap-6 mt-4 md:mt-8 max-md:flex-col">
+                <Link
+                  href="/projects"
+                  className="inline-block px-12 py-3 text-sm font-medium text-white transition rounded bg-[#512D1D] hover:bg-[#512D1D]/70 focus:outline-none focus:ring focus:ring-yellow-400"
+                >
+                  Our Projects
+                </Link>
+                <Link
+                  href="/contact"
+                  className="inline-block px-12 py-3 text-sm font-medium text-white transition rounded bg-[#512D1D] hover:bg-[#512D1D]/70 focus:outline-none focus:ring focus:ring-yellow-400"
+                >
+                  Get a Quote
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <img alt="" src={cta} className="object-cover w-full h-[500px]" />
+        </section>
+      </div>

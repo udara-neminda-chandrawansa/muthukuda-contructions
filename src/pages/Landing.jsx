@@ -112,44 +112,46 @@ function Landing() {
 
       {/*images*/}
       <div className="flex items-center justify-center w-full gap-6 px-12 py-16 mx-auto max-md:px-6 max-md:py-6 nunito max-md:flex-col">
-      <img src={car_1} className="md:w-1/3 rounded-xl" alt="" />
-      <img src={car_2} className="md:w-1/3 rounded-xl" alt="" />
-      <img src={car_3} className="md:w-1/3 rounded-xl" alt="" />
+        <img src={car_1} className="md:w-1/3 rounded-xl" alt="" />
+        <img src={car_2} className="md:w-1/3 rounded-xl" alt="" />
+        <img src={car_3} className="md:w-1/3 rounded-xl" alt="" />
       </div>
 
-      {/*CTA*/}
-      <div>
-        <section className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2">
-          <div className="flex items-center justify-center p-8 md:p-12 lg:px-16 lg:py-24">
-            <div className="max-w-xl mx-auto text-center">
-              <h2 className="text-2xl font-bold text-gray-900 md:text-3xl title">
-                Build Your Dream Home With Us
-              </h2>
+      {/*CTA New*/}
+      <section className="overflow-hidden bg-[#512D1D]/10 sm:grid sm:grid-cols-2 sm:items-center">
+        <div className="p-8 md:p-12 lg:px-16 lg:py-24">
+          <div className="max-w-xl mx-auto text-center">
+            <h2 className="text-2xl font-bold text-gray-900 md:text-3xl title">
+              Build Your Dream Home With Us
+            </h2>
 
-              <p className="hidden text-gray-500 md:mt-4 md:block">
-                WE ENSURE TO GIVE THE BEST QUALITY SERVICE FOR YOUR EXPENDITURE
-              </p>
+            <p className="hidden text-gray-500 capitalize md:mt-4 md:block">
+              We ensure to give the best quality service for your expenditure
+            </p>
 
-              <div className="flex justify-center gap-6 mt-4 md:mt-8 max-md:flex-col">
-                <Link
-                  href="/projects"
-                  className="inline-block px-12 py-3 text-sm font-medium text-white transition rounded bg-[#512D1D] hover:bg-[#512D1D]/70 focus:outline-none focus:ring focus:ring-yellow-400"
-                >
-                  Our Projects
-                </Link>
-                <Link
-                  href="/contact"
-                  className="inline-block px-12 py-3 text-sm font-medium text-white transition rounded bg-[#512D1D] hover:bg-[#512D1D]/70 focus:outline-none focus:ring focus:ring-yellow-400"
-                >
-                  Get a Quote
-                </Link>
-              </div>
+            <div className="flex justify-center gap-3 mt-4 md:mt-8 max-md:flex-col">
+              <Link
+                href="/projects"
+                className="inline-block px-12 py-3 text-sm font-medium text-white transition rounded bg-[#512D1D] hover:bg-[#512D1D]/70 focus:outline-none focus:ring focus:ring-yellow-400"
+              >
+                Our Projects
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-block px-12 py-3 text-sm font-medium text-white transition rounded bg-[#512D1D] hover:bg-[#512D1D]/70 focus:outline-none focus:ring focus:ring-yellow-400"
+              >
+                Get a Quote
+              </Link>
             </div>
           </div>
+        </div>
 
-          <img alt="" src={cta} className="object-cover w-full h-[500px]" />
-        </section>
-      </div>
+        <img
+          alt=""
+          src={cta}
+          className="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]"
+        />
+      </section>
 
       {/*blog posts*/}
       <div className="w-full px-12 py-16 mx-auto max-md:px-6 max-md:py-6 nunito">
@@ -168,26 +170,27 @@ function Landing() {
               className="group intersect:motion-preset-slide-up motion-duration-3000"
             >
               {/* Image Container */}
-              <div className="relative mb-4 overflow-hidden border rounded-lg">
+              <div className="relative flex items-center justify-center mb-4 overflow-hidden border rounded-lg">
                 <img
                   src={blog.image}
                   alt={blog.title}
                   className="w-full h-[300px] object-cover transition-transform duration-300 group-hover:scale-105"
                 />
+                {/*backdrop*/}
+                <div className="absolute left-0 w-full h-full transition-all bg-black/50 hover:bg-black/30"></div>
+                {/* Title */}
+                <h3 className="absolute text-xl font-bold text-white transition-colors">
+                  {blog.title}
+                </h3>
               </div>
 
               {/* Content */}
               <div className="space-y-3">
-                {/* Title */}
-                <h3 className="text-xl font-bold transition-colors title">
-                  {blog.title}
-                </h3>
-
                 {/* content */}
                 <div className="">
-                  <a href="#" className="inline-flex items-center text-justify">
+                  <p className="inline-flex items-center text-justify">
                     <span>{blog.content}</span>
-                  </a>
+                  </p>
                 </div>
               </div>
             </div>
