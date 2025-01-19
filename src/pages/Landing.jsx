@@ -109,217 +109,12 @@ function Landing() {
           </div>
         </section>
       </div>
-      {/*contact us*/}
-      <div className="w-full px-12 py-16 mx-auto max-md:px-6 max-md:py-6 nunito">
-        <div className="grid items-center grid-cols-1 gap-8 lg:grid-cols-2">
-          {/* Left Column - Image and Social Icons */}
-          <div className="relative max-lg:hidden">
-            <img
-              src={contact_img}
-              alt="Contact representative"
-              className="w-full h-auto rounded-lg"
-            />
-          </div>
 
-          {/* Right Column - Contact Form */}
-          <div className="space-y-6">
-            <div>
-              <h2 className="mb-4 text-4xl font-bold md:text-5xl title">
-                <span className="title">Contact </span>
-                <span className="text-[#001733] title">Us Now</span>
-              </h2>
-              <p className="text-justify text-gray-600">
-                Got a question, suggestion, or need assistance? We’re here to
-                help. Reach out to us through the methods below, and we’ll get
-                back to you as soon as possible.
-              </p>
-            </div>
-
-            <form className="space-y-4">
-              {/* Name Fields */}
-              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <div className="relative">
-                  <input
-                    type="text"
-                    placeholder="First Name"
-                    className="w-full p-3 bg-blue-50 rounded-lg pr-[30px]"
-                    required
-                  />
-                </div>
-
-                <div className="relative">
-                  <input
-                    type="text"
-                    placeholder="Last Name"
-                    className="w-full p-3 pl-10 rounded-lg bg-blue-50"
-                    required
-                  />
-                </div>
-              </div>
-
-              {/* Contact Fields */}
-              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <div className="relative">
-                  <input
-                    type="tel"
-                    placeholder="Phone"
-                    className="w-full p-3 pl-10 rounded-lg bg-blue-50"
-                    required
-                  />
-                </div>
-
-                <div className="relative">
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="w-full p-3 pl-10 rounded-lg bg-blue-50"
-                    required
-                  />
-                </div>
-              </div>
-
-              {/* Service and Budget Fields */}
-              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <div className="relative">
-                  <input
-                    type="text"
-                    placeholder="Need Services"
-                    className="w-full p-3 pl-10 rounded-lg bg-blue-50"
-                    required
-                  />
-                </div>
-
-                <div className="relative">
-                  <input
-                    type="text"
-                    placeholder="Budgets"
-                    className="w-full p-3 pl-10 rounded-lg bg-blue-50"
-                    required
-                  />
-                </div>
-              </div>
-
-              {/* Message Field */}
-              <div className="relative">
-                <textarea
-                  placeholder="Your Message..."
-                  rows={4}
-                  className="w-full p-3 rounded-lg bg-blue-50"
-                  required
-                />
-              </div>
-
-              {/* Submit Button */}
-              <button
-                type="submit"
-                className="w-full bg-gradient-to-r from-[#001733] to-blue-500 text-white py-3 rounded-lg hover:from-blue-600 hover:to-blue-600 transition-colors"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      {/*carousel*/}
-      <div
-        id="carouselExampleIndicators"
-        className="carousel slide"
-        data-coreui-ride="true"
-      >
-        <div className="carousel-indicators">
-          <button
-            type="button"
-            data-coreui-target="#carouselExampleIndicators"
-            data-coreui-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-coreui-target="#carouselExampleIndicators"
-            data-coreui-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-coreui-target="#carouselExampleIndicators"
-            data-coreui-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img
-              src={car_1}
-              className="d-block w-100 h-[50dvh] lg:h-[80dvh] object-cover"
-              alt="..."
-            />
-
-            <div className="carousel-caption d-none d-md-block">
-              <h5 className="text-xl">Transform Your Living Space</h5>
-              <p>
-                Innovative interior designs tailored to reflect your style and
-                personality.
-              </p>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <img
-              src={car_2}
-              className="d-block w-100 h-[50dvh] lg:h-[80dvh] object-cover"
-              alt="..."
-            />
-
-            <div className="carousel-caption d-none d-md-block">
-              <h5 className="text-xl">Elegance Meets Functionality</h5>
-              <p>
-                Creating timeless interiors that inspire and elevate everyday
-                living.
-              </p>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <img
-              src={car_3}
-              className="d-block w-100 h-[50dvh] lg:h-[80dvh] object-cover"
-              alt="..."
-            />
-
-            <div className="carousel-caption d-none d-md-block">
-              <h5 className="text-xl">Design Your Dream Home</h5>
-              <p>
-                Expert craftsmanship and creative solutions for every corner of
-                your home.
-              </p>
-            </div>
-          </div>
-        </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-coreui-target="#carouselExampleIndicators"
-          data-coreui-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-coreui-target="#carouselExampleIndicators"
-          data-coreui-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
+      {/*images*/}
+      <div className="flex items-center justify-center w-full gap-6 px-12 py-16 mx-auto max-md:px-6 max-md:py-6 nunito max-md:flex-col">
+      <img src={car_1} className="md:w-1/3 rounded-xl" alt="" />
+      <img src={car_2} className="md:w-1/3 rounded-xl" alt="" />
+      <img src={car_3} className="md:w-1/3 rounded-xl" alt="" />
       </div>
 
       {/*CTA*/}
@@ -338,13 +133,13 @@ function Landing() {
               <div className="flex justify-center gap-6 mt-4 md:mt-8 max-md:flex-col">
                 <Link
                   href="/projects"
-                  className="inline-block px-12 py-3 text-sm font-medium text-white transition rounded bg-[#001733] hover:bg-[#001733]/70 focus:outline-none focus:ring focus:ring-yellow-400"
+                  className="inline-block px-12 py-3 text-sm font-medium text-white transition rounded bg-[#512D1D] hover:bg-[#512D1D]/70 focus:outline-none focus:ring focus:ring-yellow-400"
                 >
                   Our Projects
                 </Link>
                 <Link
                   href="/contact"
-                  className="inline-block px-12 py-3 text-sm font-medium text-white transition rounded bg-[#001733] hover:bg-[#001733]/70 focus:outline-none focus:ring focus:ring-yellow-400"
+                  className="inline-block px-12 py-3 text-sm font-medium text-white transition rounded bg-[#512D1D] hover:bg-[#512D1D]/70 focus:outline-none focus:ring focus:ring-yellow-400"
                 >
                   Get a Quote
                 </Link>
