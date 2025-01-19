@@ -6,7 +6,7 @@ import { Facebook, Instagram, MapPin, Mail } from "lucide-react";
 
 function Footer() {
   return (
-    <footer className="py-6 text-white bg-[#060097] nunito">
+    <footer className="py-6 text-white bg-[#001733] nunito">
       <div className="w-full px-12 mx-auto 2xl:px-36 max-md:px-6">
         <div className="grid grid-cols-1 gap-12 max-lg:gap-6 md:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
@@ -27,13 +27,13 @@ function Footer() {
             <div className="flex gap-4">
               <a
                 href="https://www.instagram.com/explore/locations/1079233842270985/muthukuda-engineering-construction-pvt-ltd/"
-                className="p-2 border border-gray-700 rounded-full hover:border-[#060097] transition-colors"
+                className="p-2 border border-gray-700 rounded-full hover:border-[#001733] transition-colors"
               >
                 <Instagram className="w-4 h-4" />
               </a>
               <a
                 href="https://www.facebook.com/ASKMuthukudaarachchi"
-                className="p-2 border border-gray-700 rounded-full hover:border-[#060097] transition-colors"
+                className="p-2 border border-gray-700 rounded-full hover:border-[#001733] transition-colors"
               >
                 <Facebook className="w-4 h-4" />
               </a>

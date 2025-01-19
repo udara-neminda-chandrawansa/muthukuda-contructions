@@ -78,7 +78,7 @@ function Landing() {
         {/*banner bottom*/}
         <div className="absolute bottom-0 z-10 w-full px-6 text-sm max-md:text-xs max-sm:hidden">
           {/*service carousel*/}
-          <div className="w-full h-[15dvh] max-sm:hidden bg-[#060097]">
+          <div className="w-full h-[15dvh] max-sm:hidden bg-[#001733]">
             <LSCarousel></LSCarousel>
           </div>
           {/*spacing*/}
@@ -126,7 +126,7 @@ function Landing() {
             <div>
               <h2 className="mb-4 text-4xl font-bold md:text-5xl title">
                 <span className="title">Contact </span>
-                <span className="text-[#060097] title">Us Now</span>
+                <span className="text-[#001733] title">Us Now</span>
               </h2>
               <p className="text-justify text-gray-600">
                 Got a question, suggestion, or need assistance? We’re here to
@@ -143,6 +143,7 @@ function Landing() {
                     type="text"
                     placeholder="First Name"
                     className="w-full p-3 bg-blue-50 rounded-lg pr-[30px]"
+                    required
                   />
                 </div>
 
@@ -151,6 +152,7 @@ function Landing() {
                     type="text"
                     placeholder="Last Name"
                     className="w-full p-3 pl-10 rounded-lg bg-blue-50"
+                    required
                   />
                 </div>
               </div>
@@ -162,6 +164,7 @@ function Landing() {
                     type="tel"
                     placeholder="Phone"
                     className="w-full p-3 pl-10 rounded-lg bg-blue-50"
+                    required
                   />
                 </div>
 
@@ -170,6 +173,7 @@ function Landing() {
                     type="email"
                     placeholder="Email"
                     className="w-full p-3 pl-10 rounded-lg bg-blue-50"
+                    required
                   />
                 </div>
               </div>
@@ -181,6 +185,7 @@ function Landing() {
                     type="text"
                     placeholder="Need Services"
                     className="w-full p-3 pl-10 rounded-lg bg-blue-50"
+                    required
                   />
                 </div>
 
@@ -189,6 +194,7 @@ function Landing() {
                     type="text"
                     placeholder="Budgets"
                     className="w-full p-3 pl-10 rounded-lg bg-blue-50"
+                    required
                   />
                 </div>
               </div>
@@ -199,13 +205,14 @@ function Landing() {
                   placeholder="Your Message..."
                   rows={4}
                   className="w-full p-3 rounded-lg bg-blue-50"
+                  required
                 />
               </div>
 
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-[#060097] to-blue-500 text-white py-3 rounded-lg hover:from-blue-600 hover:to-blue-600 transition-colors"
+                className="w-full bg-gradient-to-r from-[#001733] to-blue-500 text-white py-3 rounded-lg hover:from-blue-600 hover:to-blue-600 transition-colors"
               >
                 Send Message
               </button>
@@ -331,13 +338,13 @@ function Landing() {
               <div className="flex justify-center gap-6 mt-4 md:mt-8 max-md:flex-col">
                 <Link
                   href="/projects"
-                  className="inline-block px-12 py-3 text-sm font-medium text-white transition rounded bg-[#060097] hover:bg-[#060097]/70 focus:outline-none focus:ring focus:ring-yellow-400"
+                  className="inline-block px-12 py-3 text-sm font-medium text-white transition rounded bg-[#001733] hover:bg-[#001733]/70 focus:outline-none focus:ring focus:ring-yellow-400"
                 >
                   Our Projects
                 </Link>
                 <Link
                   href="/contact"
-                  className="inline-block px-12 py-3 text-sm font-medium text-white transition rounded bg-[#060097] hover:bg-[#060097]/70 focus:outline-none focus:ring focus:ring-yellow-400"
+                  className="inline-block px-12 py-3 text-sm font-medium text-white transition rounded bg-[#001733] hover:bg-[#001733]/70 focus:outline-none focus:ring focus:ring-yellow-400"
                 >
                   Get a Quote
                 </Link>

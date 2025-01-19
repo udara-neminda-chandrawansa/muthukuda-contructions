@@ -97,7 +97,7 @@ const TestimonialSlider = () => {
             {renderStars(testimonials[currentIndex].rating)}
           </div>
 
-          <h2 className="mb-4 text-2xl font-bold text-[#060097] flex gap-2 items-center max-md:text-lg">
+          <h2 className="mb-4 text-2xl font-bold text-[#001733] flex gap-2 items-center max-md:text-lg">
             <img src={testimonials[currentIndex].image} alt="dp" className="w-10" />
             {testimonials[currentIndex].title}
           </h2>
@@ -110,13 +110,13 @@ const TestimonialSlider = () => {
         <div className="absolute flex justify-between gap-3 px-2 top-3 right-1 w-fit">
           <button
             onClick={handlePrevious}
-            className="flex items-center justify-center w-10 h-10 text-[#060097] bg-white border border-[#060097] rounded-full hover:bg-pink-50"
+            className="flex items-center justify-center w-10 h-10 text-[#001733] bg-white border border-[#001733] rounded-full hover:bg-pink-50"
           >
             <ChevronLeft />
           </button>
           <button
             onClick={handleNext}
-            className="flex items-center justify-center w-10 h-10 text-[#060097] bg-white border border-[#060097] rounded-full hover:bg-pink-50"
+            className="flex items-center justify-center w-10 h-10 text-[#001733] bg-white border border-[#001733] rounded-full hover:bg-pink-50"
           >
             <ChevronRight />
           </button>

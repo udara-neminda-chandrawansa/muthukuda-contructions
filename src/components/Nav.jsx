@@ -7,7 +7,7 @@ function Nav({ inLanding }) {
   return (
     <div
       className={`w-full h-fit flex justify-center items-center font-thin text-lg z-50 max-xl:justify-between ${
-        inLanding ? " absolute top-0 bg-[#060097]" : " bg-black"
+        inLanding ? " absolute top-0 bg-[#001733]" : " bg-black"
       }`}
     >
       {/*normal nav*/}

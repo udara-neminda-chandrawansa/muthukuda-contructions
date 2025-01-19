@@ -382,7 +382,7 @@ function Projects() {
             <button
               onClick={() => setSelectedProjTypePGWise(0)}
               className={`px-3 py-1 rounded-full border-1 ${
-                selectedProjTypePGWise === 0 ? "bg-[#060097] text-white" : ""
+                selectedProjTypePGWise === 0 ? "bg-[#001733] text-white" : ""
               }`}
             >
               All
@@ -390,7 +390,7 @@ function Projects() {
             <button
               onClick={() => setSelectedProjTypePGWise(1)}
               className={`px-3 py-1 rounded-full border-1 ${
-                selectedProjTypePGWise === 1 ? "bg-[#060097] text-white" : ""
+                selectedProjTypePGWise === 1 ? "bg-[#001733] text-white" : ""
               }`}
             >
               Completed Projects
@@ -398,7 +398,7 @@ function Projects() {
             <button
               onClick={() => setSelectedProjTypePGWise(2)}
               className={`px-3 py-1 rounded-full border-1 ${
-                selectedProjTypePGWise === 2 ? "bg-[#060097] text-white" : ""
+                selectedProjTypePGWise === 2 ? "bg-[#001733] text-white" : ""
               }`}
             >
               Ongoing Projects
@@ -476,7 +476,7 @@ function Projects() {
                           type="button"
                           data-coreui-toggle="modal"
                           data-coreui-target="#exampleModal"
-                          className="block w-full px-4 py-3 text-sm font-medium text-white transition bg-[#060097] rounded hover:scale-105"
+                          className="block w-full px-4 py-3 text-sm font-medium text-white transition bg-[#001733] rounded hover:scale-105"
                           onClick={() => {
                             setSelectedProjType("completed");
                             setSelectedProj(index);
@@ -559,7 +559,7 @@ function Projects() {
                           type="button"
                           data-coreui-toggle="modal"
                           data-coreui-target="#exampleModal"
-                          className="block w-full px-4 py-3 text-sm font-medium text-white transition bg-[#060097] rounded hover:scale-105"
+                          className="block w-full px-4 py-3 text-sm font-medium text-white transition bg-[#001733] rounded hover:scale-105"
                           onClick={() => {
                             setSelectedProjType("ongoing");
                             setSelectedProj(index);

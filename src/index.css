@@ -24,7 +24,7 @@
     font-family: "Futura", Inter, system-ui, Avenir, Helvetica, Arial,
     sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -32,7 +32,7 @@
   font-family: "Futura", Inter, system-ui, Avenir, Helvetica, Arial,
     sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -83,7 +83,7 @@ styles related to scrollbars
 
 /* Handle */
 .red-custom-scroll::-webkit-scrollbar-thumb {
-  background: #060097; 
+  background: #001733; 
   border-radius: 0px;
 }
 

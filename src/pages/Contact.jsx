@@ -27,7 +27,7 @@ const ContactForm = () => {
         <div className="mb-8 text-center">
           <h1 className="mt-2 text-3xl font-bold md:text-4xl">
             Contact With{" "}
-            <span className="text-[#060097]">Muthukuda Constructions</span>
+            <span className="text-[#001733]">Muthukuda Constructions</span>
           </h1>
         </div>
 
@@ -39,7 +39,8 @@ const ContactForm = () => {
                 <input
                   type="text"
                   placeholder="Full Name"
-                  className="w-full py-2 pl-10 pr-4 border border-gray-200 rounded-lg focus:outline-none focus:border-[#060097]"
+                  className="w-full py-2 pl-10 pr-4 border border-gray-200 rounded-lg focus:outline-none focus:border-[#001733]"
+                  required
                 />
               </div>
               <div className="relative">
@@ -47,7 +48,8 @@ const ContactForm = () => {
                 <input
                   type="tel"
                   placeholder="Phone"
-                  className="w-full py-2 pl-10 pr-4 border border-gray-200 rounded-lg focus:outline-none focus:border-[#060097]"
+                  className="w-full py-2 pl-10 pr-4 border border-gray-200 rounded-lg focus:outline-none focus:border-[#001733]"
+                  required
                 />
               </div>
               <div className="relative">
@@ -55,7 +57,8 @@ const ContactForm = () => {
                 <input
                   type="email"
                   placeholder="Email"
-                  className="w-full py-2 pl-10 pr-4 border border-gray-200 rounded-lg focus:outline-none focus:border-[#060097]"
+                  className="w-full py-2 pl-10 pr-4 border border-gray-200 rounded-lg focus:outline-none focus:border-[#001733]"
+                  required
                 />
               </div>
               <div className="relative">
@@ -63,7 +66,8 @@ const ContactForm = () => {
                 <input
                   type="text"
                   placeholder="Subject"
-                  className="w-full py-2 pl-10 pr-4 border border-gray-200 rounded-lg focus:outline-none focus:border-[#060097]"
+                  className="w-full py-2 pl-10 pr-4 border border-gray-200 rounded-lg focus:outline-none focus:border-[#001733]"
+                  required
                 />
               </div>
             </div>
@@ -71,12 +75,13 @@ const ContactForm = () => {
             <textarea
               placeholder="Write Message..."
               rows={6}
-              className="w-full p-4 border border-gray-200 rounded-lg focus:outline-none focus:border-[#060097]"
+              className="w-full p-4 border border-gray-200 rounded-lg focus:outline-none focus:border-[#001733]"
+              required
             />
 
             <button
               type="submit"
-              className="w-full px-6 py-3 font-medium text-white transition-opacity rounded-lg bg-[#060097] hover:opacity-80"
+              className="w-full px-6 py-3 font-medium text-white transition-opacity rounded-lg bg-[#001733] hover:opacity-80"
             >
               Send Message
             </button>
@@ -97,11 +102,11 @@ const ContactForm = () => {
 
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-[#060097] to-[#060097] max-[375px]:hidden">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-[#001733] to-[#001733] max-[375px]:hidden">
                   <Phone className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <p className="px-4 py-1 w-fit text-sm text-white rounded-full bg-gradient-to-r from-[#060097] to-[#060097]">
+                  <p className="px-4 py-1 w-fit text-sm text-white rounded-full bg-gradient-to-r from-[#001733] to-[#001733]">
                     Call Now
                   </p>
                   <a href="tel:94713458438" className="text-gray-600">
@@ -111,11 +116,11 @@ const ContactForm = () => {
               </div>
 
               <div className="flex items-center gap-3">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-[#060097] to-[#060097] max-[375px]:hidden">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-[#001733] to-[#001733] max-[375px]:hidden">
                   <Mail className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <p className="px-4 py-1 w-fit text-sm text-white rounded-full bg-gradient-to-r from-[#060097] to-[#060097]">
+                  <p className="px-4 py-1 w-fit text-sm text-white rounded-full bg-gradient-to-r from-[#001733] to-[#001733]">
                     Email Now
                   </p>
                   <ul>
