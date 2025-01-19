@@ -132,13 +132,13 @@ function Landing() {
             <div className="flex justify-center gap-3 mt-4 md:mt-8 max-md:flex-col">
               <Link
                 href="/projects"
-                className="inline-block px-12 py-3 text-sm font-medium text-white transition rounded bg-[#512D1D] hover:bg-[#512D1D]/70 focus:outline-none focus:ring focus:ring-yellow-400"
+                className="inline-block px-12 py-3 text-sm font-medium text-white transition rounded bg-[#512D1D] hover:bg-[#512D1D]/70 focus:outline-none focus:ring focus:ring-yellow-400 hover:motion-preset-confetti "
               >
                 Our Projects
               </Link>
               <Link
                 href="/contact"
-                className="inline-block px-12 py-3 text-sm font-medium text-white transition rounded bg-[#512D1D] hover:bg-[#512D1D]/70 focus:outline-none focus:ring focus:ring-yellow-400"
+                className="inline-block px-12 py-3 text-sm font-medium text-white transition rounded bg-[#512D1D] hover:bg-[#512D1D]/70 focus:outline-none focus:ring focus:ring-yellow-400 hover:motion-preset-confetti "
               >
                 Get a Quote
               </Link>
