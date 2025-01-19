@@ -149,7 +149,7 @@ function Landing() {
         <img
           alt=""
           src={cta}
-          className="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px] intersect:motion-preset-slide-left motion-duration-3000"
+          className="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:rounded-s-[30px] md:h-[calc(100%_-_4rem)] md:rounded-s-[60px] intersect:motion-preset-slide-left motion-duration-3000"
         />
       </section>
 
