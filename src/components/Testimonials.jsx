@@ -77,7 +77,7 @@ const TestimonialSlider = () => {
     return [...Array(rating)].map((_, index) => (
       <svg
         key={index}
-        className="w-5 h-5 text-yellow-500 fill-current"
+        className={`w-5 h-5 text-yellow-500 fill-current motion-preset-seesaw motion-delay-${index}00`}
         viewBox="0 0 24 24"
       >
         <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
@@ -87,7 +87,7 @@ const TestimonialSlider = () => {
 
   return (
     <div className="p-12 pt-0 mx-auto max-md:p-6 max-md:pt-0">
-      <h1 className="mb-6 text-4xl font-bold text-center md:text-5xl title">
+      <h1 className="mb-6 text-4xl font-bold text-center md:text-5xl title intersect:motion-preset-slide-left motion-duration-3000">
         Read trusted reviews from our customers
       </h1>
 
@@ -99,7 +99,7 @@ const TestimonialSlider = () => {
 
           <h2 className="mb-4 text-2xl font-bold text-[#512D1D] flex gap-2 items-center max-md:text-lg">
             <img src={testimonials[currentIndex].image} alt="dp" className="w-10" />
-            {testimonials[currentIndex].title}
+            <span className="motion-duration-[5000ms] motion-preset-typewriter-[30]">{testimonials[currentIndex].title}</span>
           </h2>
 
           <p className="text-justify text-gray-600 h-[10dvh] pr-3 overflow-y-scroll red-custom-scroll">

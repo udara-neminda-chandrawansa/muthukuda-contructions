@@ -8,13 +8,14 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import ContactForm from "./pages/Contact";
 import Projects from "./pages/Projects";
+import ObserverProvider from "./components/ObserverProvider";
 
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
+    <ObserverProvider>
       <Nav inLanding={true}/>
       <Switch>
       <Route path="/" component={Landing} />
@@ -32,7 +33,7 @@ function App() {
       </Switch>
       <Footer />
       <FloatingWhatsApp phoneNumber="+94713458438" accountName="Muthukuda Constructions Agent" avatar={logo} statusMessage="Online"/>
-    </>
+    </ObserverProvider>
   );
 }
 

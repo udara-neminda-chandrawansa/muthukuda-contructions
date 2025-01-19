@@ -64,7 +64,7 @@ function Landing() {
         {/*content*/}
         <div className="z-10 flex flex-col items-start justify-center w-2/3 gap-6 p-12 text-white max-sm:w-full max-md:p-6">
           <h1 className="text-3xl max-sm:text-xl">Your Dream Home</h1>
-          <h1 className="text-6xl motion-preset-slide-right max-sm:text-4xl">
+          <h1 className="text-6xl intersect:motion-preset-slide-right motion-duration-3000 max-sm:text-4xl">
             A Place Where Dreams Become Reality
           </h1>
 
@@ -92,11 +92,11 @@ function Landing() {
 
           <div className="relative max-w-screen-xl px-4 py-32 mx-auto sm:px-6 lg:flex lg:fit lg:items-center lg:px-8">
             <div className="max-w-xl text-center">
-              <h1 className="text-3xl font-extrabold text-left text-white sm:text-5xl lh-sm">
+              <h1 className="text-3xl font-extrabold text-left text-white sm:text-5xl lh-sm intersect:motion-preset-slide-right motion-duration-3000">
                 Welcome To Muthukuda Construction
               </h1>
 
-              <p className="max-w-lg mt-4 text-justify text-white">
+              <p className="max-w-lg mt-4 text-justify text-white intersect:motion-preset-slide-right motion-duration-3000 motion-delay-100">
                 MUTHUKUDA ENGINEERING & CONSTRUCTION (PVT) LTD is a leading and
                 fast growing construction company in Sri Lanka. We are engaged
                 in both commercial and residential construction with a mission
@@ -112,15 +112,15 @@ function Landing() {
 
       {/*images*/}
       <div className="flex items-center justify-center w-full gap-6 px-12 py-16 mx-auto max-md:px-6 max-md:py-6 nunito max-md:flex-col">
-        <img src={car_1} className="md:w-1/3 rounded-xl" alt="" />
-        <img src={car_2} className="md:w-1/3 rounded-xl" alt="" />
-        <img src={car_3} className="md:w-1/3 rounded-xl" alt="" />
+        <img src={car_1} className="md:w-1/3 rounded-xl intersect:motion-preset-slide-right motion-duration-3000" alt="" />
+        <img src={car_2} className="md:w-1/3 rounded-xl intersect:motion-preset-slide-up motion-duration-3000 motion-delay-100" alt="" />
+        <img src={car_3} className="md:w-1/3 rounded-xl intersect:motion-preset-slide-left motion-duration-3000" alt="" />
       </div>
 
       {/*CTA New*/}
       <section className="overflow-hidden bg-[#512D1D]/10 sm:grid sm:grid-cols-2 sm:items-center">
         <div className="p-8 md:p-12 lg:px-16 lg:py-24">
-          <div className="max-w-xl mx-auto text-center">
+          <div className="max-w-xl mx-auto text-center intersect:motion-preset-slide-right motion-duration-3000">
             <h2 className="text-2xl font-bold text-gray-900 md:text-3xl title">
               Build Your Dream Home With Us
             </h2>
@@ -149,7 +149,7 @@ function Landing() {
         <img
           alt=""
           src={cta}
-          className="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]"
+          className="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px] intersect:motion-preset-slide-left motion-duration-3000"
         />
       </section>
 
