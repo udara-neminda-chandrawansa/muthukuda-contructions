@@ -8,13 +8,13 @@ function Footer() {
   return (
     <footer className="py-6 text-white bg-[#001733] nunito">
       <div className="w-full px-12 mx-auto 2xl:px-36 max-md:px-6">
-        <div className="grid grid-cols-1 gap-12 max-lg:gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-12 max-lg:gap-6 md:grid-cols-3">
           {/* Company Info */}
           <div className="space-y-6">
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold">
-                <img src={logo} alt="" className="w-20" />
-              </h2>
+              <span className="flex justify-end">
+                <img src={logo} alt="" className="w-52" />
+              </span>
               <p className="text-sm">Your Dream Home</p>
             </div>
             <p className="text-sm text-justify text-white">
@@ -49,6 +49,12 @@ function Footer() {
                 "Exterior Design",
                 "Landscape Design",
                 "Site Planning",
+                "Design and Planning",
+                "Residential Construction",
+                "Renovations and Remodeling",
+                "Project Management",
+                "Sustainable Construction",
+                "Interior Design and Finishes",
               ].map((service) => (
                 <li key={service}>
                   <p className="text-white transition-colors cursor-pointer hover:text-[#F8EF22]">
@@ -60,7 +66,7 @@ function Footer() {
           </div>
 
           {/* Office Address */}
-          <div className="space-y-6">
+          <div className="hidden space-y-6">
             <h3 className="text-xl font-semibold">Office Address</h3>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
@@ -112,6 +118,28 @@ function Footer() {
                 )
               )}
             </ul>
+            <h3 className="text-xl font-semibold">Office Address</h3>
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
+                <Mail className="w-5 h-5 mt-1" />
+                <div>
+                  <a
+                    href="mailto:info@muthukudaconstruction.lk"
+                    className="text-white transition-colors hover:text-[#F8EF22]"
+                  >
+                    info@muthukudaconstruction.lk
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 mt-1" />
+                <div className="text-white">
+                  <p>No 629</p>
+                  <p>Halloluwa Road, </p>
+                  <p>Peradaniya</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 

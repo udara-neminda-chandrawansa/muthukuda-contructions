@@ -6,26 +6,14 @@ import { Link } from "wouter";
 function Nav({ inLanding }) {
   return (
     <div
-      className={`w-full h-fit flex justify-center items-center font-thin text-lg z-50 max-xl:justify-between ${
-        inLanding ? " absolute top-0 bg-[#001733]" : " bg-black"
+      className={`w-full h-fit flex border-b-2 border-[#FFCC00] justify-center items-center font-thin text-lg z-50 max-xl:justify-between ${
+        inLanding ? " fixed top-0 bg-[#001733]" : " bg-black"
       }`}
     >
       {/*normal nav*/}
       <div className="flex justify-between w-full px-10 h-[10dvh] max-xl:hidden">
         {/*right side*/}
-        <ul className="flex items-center w-1/3">
-          <Link href="/" className="text-white no-underline">
-            <li className="flex items-center justify-center px-3 text-white text-nowrap cursor-pointer max-lg:text-sm max-[972px]:text-xs">
-              <img
-                src={logo}
-                alt="logo-for-nav"
-                className="h-[8dvh] object-contain"
-              />
-            </li>
-          </Link>
-        </ul>
-        {/*left side*/}
-        <ul className="flex items-center justify-end w-2/3 h-full">
+        <ul className="flex items-center justify-start w-2/3 h-full">
           <Link
             href="/"
             className="font-semibold text-white no-underline lg:text-sm xl:text-base"
@@ -67,6 +55,18 @@ function Nav({ inLanding }) {
             </li>
           </Link>
         </ul>
+        {/*left side*/}
+        <ul className="flex items-center justify-end w-1/3">
+          <Link href="/" className="text-white no-underline">
+            <li className="flex items-center justify-center px-3 text-white text-nowrap cursor-pointer max-lg:text-sm max-[972px]:text-xs">
+              <img
+                src={logo}
+                alt="logo-for-nav"
+                className="h-[10dvh] object-contain"
+              />
+            </li>
+          </Link>
+        </ul>
       </div>
       {/*burger button*/}
       <div
@@ -82,7 +82,7 @@ function Nav({ inLanding }) {
         <img
           src={logo}
           alt="logo-for-small-screen"
-          className="scale-75 h-[7dvh] rounded-md"
+          className=" h-[10dvh]"
         />
       </div>
       {/*Nav offcanvas for small screens*/}

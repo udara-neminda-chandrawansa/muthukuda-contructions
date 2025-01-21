@@ -53,7 +53,7 @@ function Landing() {
   ];
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       {/*banner*/}
       <div
         className="relative flex bg-fixed bg-center bg-cover h-dvh"
@@ -96,7 +96,7 @@ function Landing() {
                 Welcome To Muthukuda Construction
               </h1>
 
-              <p className="max-w-lg mt-4 text-justify text-white intersect:motion-preset-slide-right motion-duration-3000 motion-delay-100">
+              <p className="max-w-lg mt-2 text-justify text-white intersect:motion-preset-slide-right motion-duration-3000 motion-delay-100">
                 MUTHUKUDA ENGINEERING & CONSTRUCTION (PVT) LTD is a leading and
                 fast growing construction company in Sri Lanka. We are engaged
                 in both commercial and residential construction with a mission
@@ -112,20 +112,20 @@ function Landing() {
 
       {/*images*/}
       <div className="flex items-center justify-center w-full gap-6 px-12 py-16 mx-auto max-md:px-6 max-md:py-6 nunito max-md:flex-col">
-        <img src={car_1} className="md:w-1/3 rounded-xl intersect:motion-preset-slide-right motion-duration-3000" alt="" />
-        <img src={car_2} className="md:w-1/3 rounded-xl intersect:motion-preset-slide-up motion-duration-3000 motion-delay-100" alt="" />
-        <img src={car_3} className="md:w-1/3 rounded-xl intersect:motion-preset-slide-left motion-duration-3000" alt="" />
+        <img src={car_1} className="md:w-1/3 intersect:motion-preset-slide-right motion-duration-3000" alt="" />
+        <img src={car_2} className="md:w-1/3 intersect:motion-preset-slide-up motion-duration-3000 motion-delay-100" alt="" />
+        <img src={car_3} className="md:w-1/3 intersect:motion-preset-slide-left motion-duration-3000" alt="" />
       </div>
 
       {/*CTA New*/}
       <section className="overflow-hidden bg-[#512D1D]/10 sm:grid sm:grid-cols-2 sm:items-center">
-        <div className="p-8 md:p-12 lg:px-16 lg:py-24">
+        <div className="p-8 md:p-12 lg:px-16 lg:py-6">
           <div className="max-w-xl mx-auto text-center intersect:motion-preset-slide-right motion-duration-3000">
-            <h2 className="text-2xl font-bold text-gray-900 md:text-3xl title">
+            <h2 className="text-2xl font-bold text-gray-900 md:text-3xl xl:text-4xl 2xl:text-5xl title">
               Build Your Dream Home With Us
             </h2>
 
-            <p className="hidden text-gray-500 capitalize md:mt-4 md:block">
+            <p className="hidden text-xl text-gray-500 capitalize xl:text-2xl 2xl:text-3xl md:mt-4 md:block">
               We ensure to give the best quality service for your expenditure
             </p>
 
@@ -149,7 +149,7 @@ function Landing() {
         <img
           alt=""
           src={cta}
-          className="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:rounded-s-[30px] md:h-[calc(100%_-_4rem)] md:rounded-s-[60px] intersect:motion-preset-slide-left motion-duration-3000"
+          className="h-full w-full object-cover sm:h-[calc(100%_-_1rem)] md:h-[calc(100%_-_2rem)] intersect:motion-preset-slide-left motion-duration-3000"
         />
       </section>
 
@@ -170,7 +170,7 @@ function Landing() {
               className="group intersect:motion-preset-slide-up motion-duration-3000"
             >
               {/* Image Container */}
-              <div className="relative flex items-center justify-center mb-4 overflow-hidden border rounded-lg">
+              <div className="relative flex items-center justify-center mb-4 overflow-hidden border">
                 <img
                   src={blog.image}
                   alt={blog.title}
