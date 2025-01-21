@@ -1,3 +1,4 @@
+import banner from "./../assets/Landing/banner.png";
 import logo from "./../assets/logo.png";
 import burger from "./../assets/burger.svg";
 
@@ -79,15 +80,12 @@ function Nav({ inLanding }) {
       </div>
       {/*logo for small screen nav*/}
       <div className="hidden pr-6 max-xl:block">
-        <img
-          src={logo}
-          alt="logo-for-small-screen"
-          className=" h-[10dvh]"
-        />
+        <img src={logo} alt="logo-for-small-screen" className=" h-[10dvh]" />
       </div>
       {/*Nav offcanvas for small screens*/}
       <div
-        className="offcanvas offcanvas-start"
+        className="bg-left bg-no-repeat bg-cover offcanvas offcanvas-start"
+        style={{ backgroundImage: `url(${banner})` }}
         tabIndex="-1"
         id="offcanvasExample"
         aria-labelledby="offcanvasExampleLabel"
@@ -96,7 +94,7 @@ function Nav({ inLanding }) {
           <h5 className="offcanvas-title" id="offcanvasExampleLabel"></h5>
           <button
             type="button"
-            className="btn-close text-reset"
+            className="bg-white btn-close text-reset"
             data-coreui-dismiss="offcanvas"
             aria-label="Close"
           ></button>
@@ -105,7 +103,7 @@ function Nav({ inLanding }) {
           <ul className="flex flex-col items-center justify-start h-full gap-6 font-medium">
             <Link href="/" className="w-full text-white no-underline">
               <li
-                className="flex items-center justify-start w-full pb-3 text-black border-b-2 cursor-pointer text-nowrap max-lg:text-sm"
+                className="flex items-center justify-start w-full pb-3 text-white border-b-2 cursor-pointer text-nowrap max-lg:text-sm"
                 data-coreui-dismiss="offcanvas"
               >
                 Home
@@ -113,7 +111,7 @@ function Nav({ inLanding }) {
             </Link>
             <Link href="/aboutus" className="w-full text-white no-underline">
               <li
-                className="flex items-center justify-start w-full pb-3 text-black border-b-2 cursor-pointer text-nowrap max-lg:text-sm"
+                className="flex items-center justify-start w-full pb-3 text-white border-b-2 cursor-pointer text-nowrap max-lg:text-sm"
                 data-coreui-dismiss="offcanvas"
               >
                 About Us
@@ -121,7 +119,7 @@ function Nav({ inLanding }) {
             </Link>
             <Link href="/services" className="w-full text-white no-underline">
               <li
-                className="flex items-center justify-start w-full pb-3 text-black border-b-2 cursor-pointer text-nowrap max-lg:text-sm"
+                className="flex items-center justify-start w-full pb-3 text-white border-b-2 cursor-pointer text-nowrap max-lg:text-sm"
                 data-coreui-dismiss="offcanvas"
               >
                 Services
@@ -129,7 +127,7 @@ function Nav({ inLanding }) {
             </Link>
             <Link href="/projects" className="w-full text-white no-underline">
               <li
-                className="flex items-center justify-start w-full pb-3 text-black border-b-2 cursor-pointer text-nowrap max-lg:text-sm"
+                className="flex items-center justify-start w-full pb-3 text-white border-b-2 cursor-pointer text-nowrap max-lg:text-sm"
                 data-coreui-dismiss="offcanvas"
               >
                 Projects
@@ -137,7 +135,7 @@ function Nav({ inLanding }) {
             </Link>
             <Link href="/contact" className="w-full text-white no-underline">
               <li
-                className="flex items-center justify-start w-full pb-3 text-black border-b-2 cursor-pointer text-nowrap max-lg:text-sm"
+                className="flex items-center justify-start w-full pb-3 text-white border-b-2 cursor-pointer text-nowrap max-lg:text-sm"
                 data-coreui-dismiss="offcanvas"
               >
                 Contact Us
