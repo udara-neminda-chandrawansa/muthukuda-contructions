@@ -7,7 +7,7 @@ import { Link } from "wouter";
 function Nav({ inLanding }) {
   return (
     <div
-      className={`w-full h-fit flex border-b-2 border-[#FFCC00] justify-center items-center font-thin text-lg z-50 max-xl:justify-between ${
+      className={`w-full h-fit flex text-center border-[#FFCC00] border-b justify-center items-center font-thin text-lg z-50 max-xl:justify-between ${
         inLanding ? " fixed top-0 bg-[#001733]" : " bg-black"
       }`}
     >
@@ -103,42 +103,52 @@ function Nav({ inLanding }) {
           <ul className="flex flex-col items-center justify-start h-full gap-6 font-medium">
             <Link href="/" className="w-full text-white no-underline">
               <li
-                className="flex items-center justify-start w-full pb-3 text-white border-b-2 cursor-pointer text-nowrap max-lg:text-sm"
+                className="flex items-center justify-center w-full pb-3 text-center text-white cursor-pointer text-nowrap max-lg:text-sm"
                 data-coreui-dismiss="offcanvas"
               >
+                <p className="text-xl font-black">
                 Home
+                </p>
               </li>
             </Link>
             <Link href="/aboutus" className="w-full text-white no-underline">
               <li
-                className="flex items-center justify-start w-full pb-3 text-white border-b-2 cursor-pointer text-nowrap max-lg:text-sm"
+                className="flex items-center justify-center w-full pb-3 text-center text-white cursor-pointer text-nowrap max-lg:text-sm"
                 data-coreui-dismiss="offcanvas"
               >
+                <p className="text-xl font-black">
                 About Us
+                </p>
               </li>
             </Link>
             <Link href="/services" className="w-full text-white no-underline">
               <li
-                className="flex items-center justify-start w-full pb-3 text-white border-b-2 cursor-pointer text-nowrap max-lg:text-sm"
+                className="flex items-center justify-center w-full pb-3 text-center text-white cursor-pointer text-nowrap max-lg:text-sm"
                 data-coreui-dismiss="offcanvas"
               >
+                <p className="text-xl font-black">
                 Services
+                </p>
               </li>
             </Link>
             <Link href="/projects" className="w-full text-white no-underline">
               <li
-                className="flex items-center justify-start w-full pb-3 text-white border-b-2 cursor-pointer text-nowrap max-lg:text-sm"
+                className="flex items-center justify-center w-full pb-3 text-center text-white cursor-pointer text-nowrap max-lg:text-sm"
                 data-coreui-dismiss="offcanvas"
               >
+                <p className="text-xl font-black">
                 Projects
+                </p>
               </li>
             </Link>
             <Link href="/contact" className="w-full text-white no-underline">
               <li
-                className="flex items-center justify-start w-full pb-3 text-white border-b-2 cursor-pointer text-nowrap max-lg:text-sm"
+                className="flex items-center justify-center w-full pb-3 text-center text-white cursor-pointer text-nowrap max-lg:text-sm"
                 data-coreui-dismiss="offcanvas"
               >
+                <p className="text-xl font-black">
                 Contact Us
+                </p>
               </li>
             </Link>
           </ul>
