@@ -111,7 +111,7 @@ function Landing() {
       </div>
 
       {/*images*/}
-      <div className="flex items-center justify-center w-full gap-6 px-12 py-16 mx-auto max-md:px-6 max-md:py-6 nunito max-md:flex-col">
+      <div className="flex items-center justify-center w-full gap-1 px-12 py-16 mx-auto max-md:px-6 max-md:py-6 nunito max-md:flex-col">
         <img src={car_1} className="md:w-1/3 intersect:motion-preset-slide-right motion-duration-3000" alt="" />
         <img src={car_2} className="md:w-1/3 intersect:motion-preset-slide-up motion-duration-3000 motion-delay-100" alt="" />
         <img src={car_3} className="md:w-1/3 intersect:motion-preset-slide-left motion-duration-3000" alt="" />
@@ -149,7 +149,7 @@ function Landing() {
         <img
           alt=""
           src={cta}
-          className="h-full w-full object-cover sm:h-[calc(100%_-_1rem)] md:h-[calc(100%_-_2rem)] intersect:motion-preset-slide-left motion-duration-3000"
+          className="h-full w-full object-cover sm:h-[calc(100%_-_1rem)] md:h-[calc(100%_-_0.5rem)] intersect:motion-preset-slide-left motion-duration-3000"
         />
       </section>
 
@@ -163,7 +163,7 @@ function Landing() {
         </div>
 
         {/* Blog Grid */}
-        <div className="grid grid-cols-1 gap-12 max-md:gap-6 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-3 max-md:gap-6 md:grid-cols-2">
           {blogs.map((blog) => (
             <div
               key={blog.id}

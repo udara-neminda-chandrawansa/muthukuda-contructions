@@ -64,21 +64,21 @@ function Services() {
             a seamless construction experience. Here are some of the key
             services we provide:
           </p>
-          <div className="grid grid-cols-2 gap-6 max-md:grid-cols-1">
+          <div className="grid grid-cols-2 gap-3 max-md:grid-cols-1">
             {services.map((service) => (
-              <div className="flex flex-col p-6 border rounded-lg" key={service.name}>
+              <div className="flex flex-col border rounded-lg" key={service.name}>
                 <div className="relative flex items-center justify-center rounded-md ">
                   <img
                     src={service.image}
                     alt=""
-                    className="relative object-cover rounded-md"
+                    className="relative object-cover rounded-t-md"
                   />
                   <div className="absolute left-0 w-full h-full transition-all rounded-md bg-black/50 hover:bg-black/30"></div>
                   <p className="absolute z-10 px-3 text-xl font-semibold text-center text-white max-sm:text-lg">
                     {service.name}
                   </p>
                 </div>
-                <p className="pt-6 text-justify">{service.text}</p>
+                <p className="p-6 text-justify">{service.text}</p>
               </div>
             ))}
           </div>

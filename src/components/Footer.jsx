@@ -65,32 +65,6 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Office Address */}
-          <div className="hidden space-y-6">
-            <h3 className="text-xl font-semibold">Office Address</h3>
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <Mail className="w-5 h-5 mt-1" />
-                <div>
-                  <a
-                    href="mailto:info@muthukudaconstruction.lk"
-                    className="text-white transition-colors hover:text-[#F8EF22]"
-                  >
-                    info@muthukudaconstruction.lk
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 mt-1" />
-                <div className="text-white">
-                  <p>No 629</p>
-                  <p>Halloluwa Road, </p>
-                  <p>Peradaniya</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* More Info */}
           <div className="space-y-6">
             <h3 className="text-xl font-semibold">More Info</h3>
@@ -134,7 +108,7 @@ function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-1" />
                 <div className="text-white">
-                  <p>No 629</p>
+                  <p>No: 629,</p>
                   <p>Halloluwa Road, </p>
                   <p>Peradaniya</p>
                 </div>
