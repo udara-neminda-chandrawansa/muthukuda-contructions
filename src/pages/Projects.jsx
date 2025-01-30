@@ -6,6 +6,9 @@ const nawarathna_raw = import.meta.glob(
   "../assets/Projects/Projects/completed/nawarathna/*.{png,jpg,jpeg,svg}"
 );
 // image galleries of ongoing projects
+const eranga_raw = import.meta.glob(
+  "../assets/Projects/Projects/ongoing/1-eranga/*.{png,jpg,jpeg,svg}"
+);
 const samarakoon_raw = import.meta.glob(
   "../assets/Projects/Projects/ongoing/3-aruna/*.{png,jpg,jpeg,svg}"
 );
@@ -70,6 +73,7 @@ function Projects() {
   const [nawarathnaImages, setNawarathnaImages] = useState([]);
 
   // ongoing proj img arrays
+  const [erangaImages, setErangaImages] = useState([]);
   const [samarakoonImages, setSamarakoonImages] = useState([]);
   const [chinthakaImages, setChinthakaImages] = useState([]);
   const [kodithuwakkuImages, setKodithuwakkuImages] = useState([]);
@@ -158,6 +162,16 @@ function Projects() {
     loadNawarathnaImages();
 
     // ** Ongoing **
+    // Load eranga_raw images
+    const loadErangaImages = async () => {
+      const resolvedImages = await Promise.all(
+        Object.keys(eranga_raw).map((key) => eranga_raw[key]())
+      );
+      setErangaImages(resolvedImages.map((mod) => mod.default));
+    };
+
+    loadErangaImages();
+
     // Load samarakoon_raw images
     const loadSamarakoonImages = async () => {
       const resolvedImages = await Promise.all(
@@ -291,7 +305,7 @@ function Projects() {
 
   const ThreeDProjects = [
     ["Dr. Jagath - Matale (M E C)", "", ["", ""], jagathImages],
-    ["Miss Anusha 3D", "", ["", ""], anushaImages],
+    ["Miss Anusha (M.E.C)", "", ["", ""], anushaImages],
     [
       "Mr. Rathnavibushana - Pilimathalawa (M E C)",
       "",
@@ -299,7 +313,7 @@ function Projects() {
       rathnavibushanaImages,
     ],
     ["Mr. Indika - Mathale (M E C)", "", ["", ""], indikaImages],
-    ["Mr. Yasiru - Katugastota (M E C)", "", ["", ""], yasiruImages],
+    ["Mr. Yaseru - Katugastota (M E C)", "", ["", ""], yasiruImages],
   ];
 
   const completedProjects = [
@@ -318,7 +332,8 @@ function Projects() {
   ];
 
   const ongoingProjects = [
-    ["Dr. Kapila Kandy  (M E C)", "", ["", "", "", "", ""], kapilaImages],
+    ["Dr. Eranga (M E C)", "", ["", "", "", "", ""], erangaImages],
+    ["Dr. Kapila Kandy (M.E.C)", "", ["", "", "", "", ""], kapilaImages],
     [
       "Dr. Aruna  (M E C)",
       "The site was one of those awkward leftover plots in a by-road junction, which used to be flooded by rainwater in the monsoon season due to the poorly maintained drainage system. Even though the site was not the best place to build a house, the potential of designing a unique house in the vicinity had been identified by the architect during the initial visit, and accepted the project as a challenge. In contrast to many present-day clients, Mr. Nawarathne’s idea of a home was easy to capture because of his simple lifestyle and his rural upbringing. As minimalism was preferred by the whole family, the architect did not have to worry about convincing them to chop off the unwatered spaces of their primary brief. The house was designed to have a semi-basement for parking and a backyard, to keep service areas away from the main house but kept the physical connection to the main areas. The main two floor levels were divided into four levels with 5 feet level differences. Due to this, the staircase was sandwiched by two wings of the house. Mrs. Padma Gunarathne, the Structural Engineer of the project carefully developed the structural design. Her effort was admirable because designing an economical structure for a split-level house in a sloping lot pushes any well-experienced engineer to run the extra mile. Ultimately, the client and his family were rewarded with a minimal yet luxurious tropical house that is well-equipped with modern facilities. Fulfillment of all parties indicates the potential of a long-lasting friendship in advance.",
@@ -332,7 +347,7 @@ function Projects() {
       samarakoonImages,
     ],
     [
-      "Mr.Kodithuwakku M.E.C",
+      "Mr.Kodithuwakku (M.E.C)",
       "",
       [
         "Project Type : Appartment",
@@ -368,7 +383,7 @@ function Projects() {
       jaliyaImages,
     ],
     [
-      "Mr. Asanka  M.E.C",
+      "Mr. Asanka (M E C)",
       "",
       [
         "Project Type : Personalized Residence",
@@ -386,7 +401,7 @@ function Projects() {
       prasannaImages,
     ],
     [
-      "Dr. Wimal - M.E.C",
+      "Dr Wimal (M.E.C)",
       "",
       [
         "Project Type : Personalized Residence",
@@ -412,7 +427,7 @@ function Projects() {
       taniyaImages,
     ],
     [
-      "Mr. Dhanushka",
+      "Mr. Danushka (M.E.C)",
       "",
       [
         "Project Type : Personalized Residence",
