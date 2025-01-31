@@ -509,8 +509,14 @@ function Projects() {
                     {/*carousel*/}
                     <div
                       id={`projCar-${index}`}
-                      className="h-64 bg-gray-600 carousel slide sm:h-72"
+                      className="h-64 bg-gray-600 cursor-pointer carousel slide sm:h-72"
                       data-coreui-ride="true"
+                      data-coreui-toggle="modal"
+                      data-coreui-target="#exampleModal"
+                      onClick={() => {
+                        setSelectedProjType("completed");
+                        setSelectedProj(index);
+                      }}
                     >
                       {/*car content (images)*/}
                       <div className="carousel-inner">
@@ -592,8 +598,14 @@ function Projects() {
                     {/*carousel*/}
                     <div
                       id={`projCar-ong-${index}`}
-                      className="h-64 bg-gray-600 carousel slide sm:h-72"
+                      className="h-64 bg-gray-600 cursor-pointer carousel slide sm:h-72"
                       data-coreui-ride="true"
+                      data-coreui-toggle="modal"
+                      data-coreui-target="#exampleModal"
+                      onClick={() => {
+                        setSelectedProjType("ongoing");
+                        setSelectedProj(index);
+                      }}
                     >
                       {/*car content (images)*/}
                       <div className="carousel-inner">
@@ -675,8 +687,14 @@ function Projects() {
                     {/*carousel*/}
                     <div
                       id={`projCar-3d-${index}`}
-                      className="h-64 bg-gray-600 carousel slide sm:h-72"
+                      className="h-64 bg-gray-600 cursor-pointer carousel slide sm:h-72"
                       data-coreui-ride="true"
+                      data-coreui-toggle="modal"
+                      data-coreui-target="#exampleModal"
+                      onClick={() => {
+                        setSelectedProjType("3d");
+                        setSelectedProj(index);
+                      }}
                     >
                       {/*car content (images)*/}
                       <div className="carousel-inner">
@@ -760,7 +778,7 @@ function Projects() {
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title" id="exampleModalLabel">
